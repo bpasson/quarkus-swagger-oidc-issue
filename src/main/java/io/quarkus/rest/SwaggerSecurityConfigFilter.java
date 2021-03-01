@@ -18,7 +18,7 @@ public class SwaggerSecurityConfigFilter implements OASFilter {
     public void filterOpenAPI(OpenAPI openAPI) {
 
         // Get the authorizationUrl and refreshUrl from Config
-        String authServer = config.getValue("quarkus.oidc.auth-server-url", String.class);
+        String authServer = config.getValue("quarkus.oidc.swagger.auth-server-url", String.class);
         if( !authServer.endsWith("/")) {
             authServer += "/";
         }
