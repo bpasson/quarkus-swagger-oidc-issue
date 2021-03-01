@@ -30,7 +30,3 @@ java -jar target/quarkus-app/quarkus-run.jar
 ```
 
 Note: the `.env` file needs to be in the same directory as you run the `java` command.
-
-## Noticed behaviour
-1) Go to http://localhost:8080 click the link, login. You will get a valid token and can use the API. 
-2) Use /api/logout, go to /q/api/docs and you will get a CORS error and not the login screen to Keycloak as you might expect from the settings in `application.properties`.
