@@ -34,7 +34,7 @@ public class SwaggerSecurityConfigFilter implements OASFilter {
         SecurityScheme securityScheme = OASFactory.createSecurityScheme();
         securityScheme.setType(SecurityScheme.Type.OPENIDCONNECT);
         securityScheme.setOpenIdConnectUrl(authServer + ".well-known/openid-configuration");
-        securitySchemes.put("Example Scheme", securityScheme);
+        securitySchemes.put("authentication", securityScheme);
         openAPI.getComponents().setSecuritySchemes(securitySchemes);
     }
 
